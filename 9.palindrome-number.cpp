@@ -18,8 +18,3 @@ public:
     }
 };
 // @lc code=end
-
-//2022-11-02
-//11510/11510 cases passed (30 ms)
-//Your runtime beats 47.32 % of cpp submissions
-//Your memory usage beats 90.82 % of cpp submissions (5.8 MB)
