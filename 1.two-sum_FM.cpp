@@ -25,7 +25,3 @@ public:
 
 // @lc code=end
 
-//2022-11-02 FM
-//57/57 cases passed (479 ms)
-//Your runtime beats 37.59 % of cpp submissions
-//Your memory usage beats 73.85 % of cpp submissions (10.3 MB)
