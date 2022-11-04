@@ -14,7 +14,6 @@ public:
         int closed=0;
         stack<char> stack; 
         for(char& c  : s){
-
             if((c=='{') || (c=='[') || (c=='(')) open ++ ;
             if((c=='}') || (c==']') || (c==')')) closed ++ ;
             
