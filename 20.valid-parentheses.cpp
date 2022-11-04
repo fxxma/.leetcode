@@ -19,25 +19,12 @@ public:
             if((c=='}') || (c==']') || (c==')')) closed ++ ;
             
             if((c=='{') || (c=='[') || (c=='(')) stack.push(c);
-
-            if(!stack.empty() && c=='}' && stack.top()=='{'){
-                stack.pop();
-                open --;
-                closed --;
-            }
-            if(!stack.empty() && c==')' && stack.top()=='('){
-                stack.pop();
-                open --;
-                closed -- ;
-            }
-            if(!stack.empty() && c==']' && stack.top()=='['){
-                stack.pop();
-                open --;
-                closed --;
-            } 
-
+            if(!stack.empty() && c=='}' && stack.top()=='{') stack.pop();
+            if(!stack.empty() && c==')' && stack.top()=='(') stack.pop();
+            if(!stack.empty() && c==']' && stack.top()=='[') stack.pop();
         }
-        if(!(closed == 0) || !(open ==0)) return false ;
+        
+        if(!(closed == open)) return false ;
         return stack.empty();
 
     }
