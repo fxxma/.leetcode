@@ -5,7 +5,6 @@
  */
 
 // @lc code=start
-#include <bits/stdc++.h>
 
 class Solution {
 public:
